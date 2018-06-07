@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Get Commited</title>
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="game.js"></script>
+  <script language="javascript" type="text/javascript" src="blob.js"></script> 
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Performing GET requests to the Github API and logging the responses to the console
+     
+    // $.ajax({
+    //   url: "https://api.github.com/repos/rockymia50/Gifhero/stats/contributors?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+    //   method: "GET"
+    // }).then(function(response) {
+    //   console.log(response);
+    // });
+
+    // $.ajax({
+    //   url: "https://api.github.com/repos/rockymia50/Inventur2/stats/contributors?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+    //   method: "GET"
+    // }).then(function(response) {
+    //   console.log(response);
+    // });
+
+    // $.ajax({
+    //   url: "https://api.github.com/repos/rockymia50/Inventur2/stats/commit_activity?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+    //   method: "GET"
+    // }).then(function(response) {
+    //   console.log(response);
+    // });
+   
+    // $.ajax({
+    //   url: "https://api.github.com/repos/rockymia50/Star-Wars-RPG/stats/participation?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+    //   method: "GET"
+    // }).then(function(response) {
+    //   console.log(response);
+    // });
+
+    $.ajax({
+      url: "https://api.github.com/repos/rockymia50/:repo/stats/commit_activity?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+
+// #6 Request
+    $.ajax({
+      url: "https://api.github.com/repos/rockymia50/Inventur2/stats/code_frequency?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+
+    $.ajax({
+      url: "https://api.github.com/repos/rockymia50/Inventur2/stats/punch_card?access_token=0c4d9a4d096790af7844f5585b02c18c17bc43a4",
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+// ---------------------------------------------------------
+
+    console.log("Because our AJAX requests are asynchronous, this line of code will most likely log first");
+  </script>
+
+</body>
+
+</html>
